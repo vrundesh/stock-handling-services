@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: statistics-service
+
+server:
+  port: 8301
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistery: true
+    serviceUrl:
+      defaultZone: http://localhost:8302/eureka
+  instance:
+    hostname: localhost
+
